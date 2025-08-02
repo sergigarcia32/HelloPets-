@@ -143,10 +143,7 @@
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url(./img/perros-felices.png);
-              cursor: pointer;
-            "
+            style="background-image: url(./img/perros-felices.png)"
           >
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
@@ -159,13 +156,21 @@
                   <small>Mente feliz, peludo feliz.</small>
                 </li>
               </ul>
+              <!-- Botón para abrir el primer modal -->
+              <button
+                type="button"
+                class="btn btn-success text-uppercase mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#fullscreenModal1"
+              >
+                ver top 3
+              </button>
             </div>
           </div>
         </div>
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="cursor: pointer"
           >
             <div
               class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1"
@@ -180,16 +185,502 @@
                   >
                 </li>
               </ul>
+
+              <!-- Botón para abrir el segundo modal -->
+              <button
+                type="button"
+                class="btn btn-success text-uppercase mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#fullscreenModal2"
+              >
+                ver top 3
+              </button>
+
+              <!-- Modal 1 -->
+              <div
+                class="modal fade"
+                id="fullscreenModal1"
+                tabindex="-1"
+                aria-labelledby="fullscreenModalLabel1"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title text-uppercase fs-2"
+                        id="fullscreenModalLabel1"
+                      >
+                        top 3 Psicólogos para Peludos
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="card-group gap-4">
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal 2 -->
+              <div
+                class="modal fade"
+                id="fullscreenModal2"
+                tabindex="-1"
+                aria-labelledby="fullscreenModalLabel2"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title text-uppercase fs-2"
+                        id="fullscreenModalLabel2"
+                      >
+                        top 3 Salud y Bienestar para Peludos
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="card-group gap-4">
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal 3 -->
+              <div
+                class="modal fade"
+                id="fullscreenModal3"
+                tabindex="-1"
+                aria-labelledby="fullscreenModalLabel3"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-fullscreen">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        class="modal-title text-uppercase fs-2"
+                        id="fullscreenModalLabel3"
+                      >
+                        top 3 Peluquerías para Peludos
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="card-group gap-3">
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                        <div class="card border">
+                          <img
+                            src="https://picsum.photos/800/400"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Quod alias eligendi neque sed velit,
+                              excepturi rerum ad ducimus veritatis, sint eos
+                              similique illum soluta dignissimos ea quam
+                              nesciunt. Quis, nulla. Lorem ipsum dolor sit amet
+                              consectetur adipisicing elit. Modi a in enim nihil
+                              non libero eum dignissimos quae corrupti eligendi
+                              dolorem architecto blanditiis, animi quia?
+                              Possimus necessitatibus autem numquam officiis?
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                            </p>
+                            <a href="" class="btn btn-success w-100"
+                              >Ver más...</a
+                            >
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-body-secondary"
+                              >Last updated 3 mins ago</small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url(./img/perros-felices.png);
-              cursor: pointer;
-            "
+            style="background-image: url(./img/perros-felices.png)"
           >
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <h3 class="mt-5 mb-4 display-6 lh-1 fw-bold">
@@ -209,6 +700,15 @@
                   <small>Guapos, limpios y felices.</small>
                 </li>
               </ul>
+              <!-- Botón para abrir el tercer modal -->
+              <button
+                type="button"
+                class="btn btn-success text-uppercase mt-3"
+                data-bs-toggle="modal"
+                data-bs-target="#fullscreenModal3"
+              >
+                ver top 3
+              </button>
             </div>
           </div>
         </div>
