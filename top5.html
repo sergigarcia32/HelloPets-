@@ -11,19 +11,36 @@
       crossorigin="anonymous"
     />
   </head>
+  <style>
+    #btnSubir {
+      position: fixed;
+      bottom: 30px;
+      right: 70px;
+      display: none;
+      z-index: 1050;
+    }
+  </style>
   <body class="bg-light">
     <div class="container my-5">
       <div class="p-5 text-center bg-dark rounded-3">
         <h1 class="text-uppercase text-white">top 5 profesionales</h1>
         <p class="col-lg-8 mx-auto fs-5 text-white">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officiis
-          eaque nostrum dolorum fugiat placeat tempore quod incidunt
-          perspiciatis, consectetur doloribus! Libero voluptatibus voluptas
-          tempora soluta? Doloribus, provident praesentium. Blanditiis.
+          <span class="text-success">¡Hello, Pets!</span> es una plataforma que conecta a dueños de mascotas con
+          los mejores profesionales del sector, como veterinarios, cuidadores y
+          paseadores. Promueve una competencia sana basada en metas y
+          colaboración, buscando siempre el bienestar animal. Su objetivo es
+          formar una comunidad de expertos comprometidos con hacer felices a los
+          peludos.
         </p>
         <div
           class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mb-2"
         >
+          <a
+            class="text-center btn btn-light btn-lg px-4 rounded"
+            href="index.html"
+          >
+            Home
+          </a>
           <a
             class="text-center btn btn-success btn-lg px-4 rounded"
             href="#psicoologia"
@@ -397,6 +414,38 @@
         </div>
       </div>
     </div>
+    <div style="height: 2000px"></div>
+    <button
+      id="btnSubir"
+      class="btn btn-success rounded-circle shadow"
+      onclick="subirArriba()"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons (opcional) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      const btn = document.getElementById("btnSubir");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+
+      function subirArriba() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
     <footer
       class="d-flex flex-wrap justify-content-evenly align-items-center py-3 border-top bg-dark"
     >
