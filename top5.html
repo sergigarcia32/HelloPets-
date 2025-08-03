@@ -21,6 +21,63 @@
     }
   </style>
   <body class="bg-light">
+    <nav class="navbar bg-dark navbar-expand-lg py-2">
+      <div class="container">
+        <a
+          class="navbar-brand text-success fw-bold fs-3 py-2 px-3 rounded"
+          href="index.html"
+          >¡Hello, Pets!</a
+        >
+        <button
+          class="navbar-toggler bg-white rounded-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-dark"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-uppercase"
+                aria-current="page"
+                href="index.html"
+                >home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white text-uppercase"
+                aria-current="page"
+                href="top5.html"
+                >top 5 profesionales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-white" href="reglas.html"
+                >las reglas de la liga</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar al mejor ;)"
+              aria-label="buscar "
+            />
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <div class="container my-5">
       <div class="p-5 text-center bg-dark rounded-3">
         <h1 class="text-uppercase text-white">top 5 profesionales</h1>
@@ -260,7 +317,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-4">
           <div class="card h-100">
             <img
               src="https://picsum.photos/800/400"
@@ -430,35 +487,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-
-    <script>
-      const btn = document.getElementById("btnSubir");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-          btn.style.display = "block";
-        } else {
-          btn.style.display = "none";
-        }
-      });
-
-      function subirArriba() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    </script>
     <footer
       class="d-flex flex-wrap justify-content-evenly align-items-center py-3 border-top bg-dark"
     >
       <div class="d-flex align-items-center gap-3">
-        <a
-          href="/"
-          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-          aria-label="Bootstrap"
-        >
-          <svg class="bi" width="30" height="24" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
         <span class="mb-3 mb-md-0 text-white text-start"
           >© 2025 Company, Inc</span
         >
